@@ -11,6 +11,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
+
+/**
+	*Cette classe permet de dessiner une fleche noire
+	*On l'utilise dans l'interface graphique
+	*/
 public class BuildArrowBlack extends JLabel implements Runnable{
 
 	Color color = null ;
@@ -36,6 +41,10 @@ public class BuildArrowBlack extends JLabel implements Runnable{
 		 run();
 	}
 	@Override
+	/**
+		*Dessine chaque ligne de la flèche
+		*@param g
+		*/
 	 public void paintComponent(Graphics g) {
 	        super.paintComponent(g);
 	       
